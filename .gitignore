@@ -1,0 +1,9 @@
+# local generated file by LaTex Workshop
+*.aux
+*.cut
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf
+*.gz
