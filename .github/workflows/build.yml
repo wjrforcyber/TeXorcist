@@ -32,3 +32,9 @@ jobs:
         with:
           files: TeXorcist.pdf
           tag_name: ${{ github.ref_name }}
+      - name: Delete old releases
+        uses: dev-drprasad/delete-older-releases@v0.3.4
+        with:
+          keep_latest: 1  # Number of latest releases to keep
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Requires repo permissions
