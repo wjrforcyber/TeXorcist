@@ -7,3 +7,6 @@
 *.out
 *.pdf
 *.gz
+
+# MacOS generated file
+.DS_Store

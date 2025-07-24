@@ -204,6 +204,7 @@ The peer review process inherently involves substantial effort from all particip
 All that needs to be pre-checked are listed as bullet points for easier reference.
 \subsection{General}
 \begin{itemize}
+    \item Use sub-texfiles instead of merging all contents in one file. One section one sub-texfile.
     \item Always end a sentence with a period. Be careful with misusing of comma everywhere.
     \item Check the use of quotes, use
     \begin{verbatim}
@@ -213,8 +214,16 @@ All that needs to be pre-checked are listed as bullet points for easier referenc
     before and after the quotes.
     \item Check the use of ``a''/``an'' before a word.
     \item Use LLM such as GPT/Deepseek to help with rephrasing. Give detailed and concrete prompts.
-\end{itemize}
+    \item For different types of dash lines, we have
+    \begin{verbatim}
+        Hyphen -
+        En-dash --
+        Em-dash ---
+    \end{verbatim}
+    \vspace{-\baselineskip}
+    Detailed answer about dash usage could be seen \href{https://tex.stackexchange.com/questions/53413/what-is-the-latex-command-for-em-dash}{here} and \href{https://www.reddit.com/r/writing/comments/vysrhj/comment/ig41u4x/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button}{here}.
 
+\end{itemize}
 \subsection{Introduction}
 \begin{itemize}
     \item Gradually introduce instead of directly give what the paper is doing.
@@ -235,6 +244,8 @@ All that needs to be pre-checked are listed as bullet points for easier referenc
     \end{verbatim}
     \vspace{-\baselineskip}
     is more expressive than labeling arrows in the table.
+    \item Give label to all the different objects.
+    \item Make as detailed description as possible in \verb+\caption+.
 \end{itemize}
 
 \subsection{References}
