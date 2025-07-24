@@ -32,6 +32,7 @@ jobs:
         with:
           files: TeXorcist.pdf
           tag_name: ${{ github.ref_name }}
+          draft: false  # ← Force publish immediately (not draft)
       - name: Delete old releases
         uses: dev-drprasad/delete-older-releases@v0.3.4
         with:
