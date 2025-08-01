@@ -100,7 +100,7 @@
 %% Uncommenting
 %% the next command will enable that style.
 %%\citestyle{acmauthoryear}
-
+\usepackage{spverbatim}
 
 %%
 %% end of the preamble, start of the body of the document source.
@@ -204,6 +204,12 @@ The peer review process inherently involves substantial effort from all particip
 All that needs to be pre-checked are listed as bullet points for easier reference.
 \subsection{General}
 \begin{itemize}
+    \item Take advantages of setting new commands such as
+\begin{spverbatim}
+\newcommand{\Issue}[1]{\textcolor{red}{[\textbf{Discussion needed}: #1]}}
+\newcommand{\TODO}[1]{\textcolor{blue}{[\textbf{TODO @Jingren}: #1]}}
+\end{spverbatim}
+These commands simplifies writing and reviewing process.
     \item Use sub-texfiles instead of merging all contents in one file. One section one sub-texfile.
     \item Always end a sentence with a period. Be careful with misusing of comma everywhere.
     \item Check the use of quotes, use
@@ -237,7 +243,7 @@ All that needs to be pre-checked are listed as bullet points for easier referenc
 
 \subsection{Table \& Figure}
 \begin{itemize}
-    \item Give exact minimized example is better than give an abstract and vague graph.
+    \item Giving exact minimized example is better than giving an abstract and vague graph.
     \item Color better results such as using method
     \begin{verbatim}
         \cellcolor{green!25}\textbf{236}
@@ -245,7 +251,7 @@ All that needs to be pre-checked are listed as bullet points for easier referenc
     \vspace{-\baselineskip}
     is more expressive than labeling arrows in the table.
     \item Give label to all the different objects.
-    \item Make as detailed description as possible in \verb+\caption+.
+    \item Make as detailed description as possible in \verb+\caption+ rather than in the paragraph, reviewers may take time look into examples rather than paragraph.
 \end{itemize}
 
 \subsection{References}
@@ -261,7 +267,7 @@ All that needs to be pre-checked are listed as bullet points for easier referenc
     \end{verbatim}
     \vspace{-\baselineskip}
     to reference a paper.
-    
+    \item Unlike the \verb+\cite{}+, no \verb+~+ is needed when adding \verb+\footnote{}+.
 \end{itemize}
 \end{document}
 \endinput
